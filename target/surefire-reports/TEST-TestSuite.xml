@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="55.251" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright\target\test-classes;C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright\target\classes;C:\Users\supra\.m2\repository\com\microsoft\playwright\playwright\1.42.0\playwright-1.42.0.jar;C:\Users\supra\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\supra\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\supra\.m2\repository\com\microsoft\playwright\driver\1.42.0\driver-1.42.0.jar;C:\Users\supra\.m2\repository\com\microsoft\playwright\driver-bundle\1.42.0\driver-bundle-1.42.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\supra\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\supra\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\supra\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\supra\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\supra\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\supra\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\supra\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\supra\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\supra\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\supra\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\supra\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\supra\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
+    <property name="sun.java.command" value="C:\Users\supra\AppData\Local\Temp\surefire7712184924062444930\surefirebooter-20260328153357739_3.jar C:\Users\supra\AppData\Local\Temp\surefire7712184924062444930 2026-03-28T15-33-57_554-jvmRun1 surefire-20260328153357739_1tmp surefire_0-20260328153357739_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright\target\test-classes;C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright\target\classes;C:\Users\supra\.m2\repository\com\microsoft\playwright\playwright\1.42.0\playwright-1.42.0.jar;C:\Users\supra\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\supra\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\supra\.m2\repository\com\microsoft\playwright\driver\1.42.0\driver-1.42.0.jar;C:\Users\supra\.m2\repository\com\microsoft\playwright\driver-bundle\1.42.0\driver-bundle-1.42.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\supra\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\supra\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\supra\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\supra\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\supra\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\supra\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\supra\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\supra\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\supra\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\supra\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\supra\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\supra\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\supra\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\supra\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\supra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\supra\AppData\Local\Temp\surefire7712184924062444930\surefirebooter-20260328153357739_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
+    <property name="user.name" value="supra"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\supra\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\supra\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Users\supra\Documents\Projects\Playwright-Java\com.learn.playwright"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\supra\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\supra\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\supra\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;%FLUTTER%\bin;%JAVA_HOME%\bin;%MAVEN_HOME%\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%PYTHON_HOME%;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\supra\AppData\Local\Microsoft\WindowsApps;C:\Users\supra\Documents\software_and_library\apache-maven-3.9.12\bin;C:\Users\supra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\supra\AppData\Local\Python\bin;c:\Users\supra\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.10+8-LTS-217"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Inventory page loads with correct product count&quot;, &quot;Product inventory&quot;](1)" classname="com.demo.runner.TestRunner" time="31.532">
+    <system-out><![CDATA[
+Scenario: Inventory page loads with correct product count              # src/test/resources/features/inventory.feature:10
+▶ Starting: Inventory page loads with correct product count
+  Given I am logged in as "standard_user" with password "secret_sauce" # com.demo.steps.InventorySteps.iAmLoggedInAs(java.lang.String,java.lang.String)
+  Then I should see 6 products on the inventory page                   # com.demo.steps.InventorySteps.iShouldSeeProductsOnTheInventoryPage(int)
+⏹ Finished: Inventory page loads with correct product count | Status: PASSED
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add a specific product to cart&quot;, &quot;Product inventory&quot;](2)" classname="com.demo.runner.TestRunner" time="3.525">
+    <system-out><![CDATA[
+Scenario: Add a specific product to cart                               # src/test/resources/features/inventory.feature:13
+▶ Starting: Add a specific product to cart
+  Given I am logged in as "standard_user" with password "secret_sauce" # com.demo.steps.InventorySteps.iAmLoggedInAs(java.lang.String,java.lang.String)
+  When I add "Sauce Labs Backpack" to the cart                         # com.demo.steps.InventorySteps.iAddProductToCart(java.lang.String)
+  Then the cart badge should show 1 item                               # com.demo.steps.InventorySteps.theCartBadgeShouldShow(int)
+⏹ Finished: Add a specific product to cart | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add first available product to cart&quot;, &quot;Product inventory&quot;](3)" classname="com.demo.runner.TestRunner" time="3.469">
+    <system-out><![CDATA[
+Scenario: Add first available product to cart                          # src/test/resources/features/inventory.feature:17
+▶ Starting: Add first available product to cart
+  Given I am logged in as "standard_user" with password "secret_sauce" # com.demo.steps.InventorySteps.iAmLoggedInAs(java.lang.String,java.lang.String)
+  When I add the first product to the cart                             # com.demo.steps.InventorySteps.iAddFirstProductToCart()
+  Then the cart badge should show 1 item                               # com.demo.steps.InventorySteps.theCartBadgeShouldShow(int)
+⏹ Finished: Add first available product to cart | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;](4)" classname="com.demo.runner.TestRunner" time="4.885">
+    <system-out><![CDATA[
+Scenario: Successful login with valid credentials                   # src/test/resources/features/login.feature:15
+▶ Starting: Successful login with valid credentials
+  Given I am on the login page                                      # com.demo.steps.LoginSteps.iAmOnTheLoginPage()
+  When I enter username "standard_user" and password "secret_sauce" # com.demo.steps.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                                      # com.demo.steps.LoginSteps.iClickTheLoginButton()
+  Then I should be on the inventory page                            # com.demo.steps.LoginSteps.iShouldBeOnTheInventoryPage()
+⏹ Finished: Successful login with valid credentials | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login fails with locked out user&quot;, &quot;Login functionality&quot;](5)" classname="com.demo.runner.TestRunner" time="3.574">
+    <system-out><![CDATA[
+Scenario: Login fails with locked out user                               # src/test/resources/features/login.feature:20
+▶ Starting: Login fails with locked out user
+  Given I am on the login page                                           # com.demo.steps.LoginSteps.iAmOnTheLoginPage()
+  When I enter username "locked_out_user" and password "secret_sauce"    # com.demo.steps.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                                           # com.demo.steps.LoginSteps.iClickTheLoginButton()
+  Then I should see error message "Sorry, this user has been locked out" # com.demo.steps.LoginSteps.iShouldSeeErrorMessage(java.lang.String)
+⏹ Finished: Login fails with locked out user | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login fails with wrong password&quot;, &quot;Login functionality&quot;](6)" classname="com.demo.runner.TestRunner" time="3.849">
+    <system-out><![CDATA[
+Scenario: Login fails with wrong password                              # src/test/resources/features/login.feature:25
+▶ Starting: Login fails with wrong password
+  Given I am on the login page                                         # com.demo.steps.LoginSteps.iAmOnTheLoginPage()
+  When I enter username "standard_user" and password "wrong_password"  # com.demo.steps.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                                         # com.demo.steps.LoginSteps.iClickTheLoginButton()
+  Then I should see error message "Username and password do not match" # com.demo.steps.LoginSteps.iShouldSeeErrorMessage(java.lang.String)
+⏹ Finished: Login fails with wrong password | Status: PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login fails with empty credentials&quot;, &quot;Login functionality&quot;](7)" classname="com.demo.runner.TestRunner" time="3.252">
+    <system-out><![CDATA[
+Scenario: Login fails with empty credentials             # src/test/resources/features/login.feature:30
+▶ Starting: Login fails with empty credentials
+  Given I am on the login page                           # com.demo.steps.LoginSteps.iAmOnTheLoginPage()
+  When I enter username "" and password ""               # com.demo.steps.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                           # com.demo.steps.LoginSteps.iClickTheLoginButton()
+  Then I should see error message "Username is required" # com.demo.steps.LoginSteps.iShouldSeeErrorMessage(java.lang.String)
+⏹ Finished: Login fails with empty credentials | Status: PASSED
+]]></system-out>
+  </testcase>
+</testsuite>
