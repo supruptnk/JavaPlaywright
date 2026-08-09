@@ -13,30 +13,25 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <playwright.version>1.42.0</playwright.version>
-        <cucumber.version>7.15.0</cucumber.version>
+        <playwright.version>1.62.0</playwright.version>
+        <selenium.version>4.46.0</selenium.version>
         <testng.version>7.9.0</testng.version>
     </properties>
 
     <dependencies>
 
-        <!-- ✅ Playwright Java — replaces Selenium WebDriver -->
+        <!-- Playwright Java — replaces Selenium WebDriver -->
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
             <version>${playwright.version}</version>
         </dependency>
 
-        <!-- ✅ Cucumber — same as you use today -->
+        <!-- selenium — same as you use today -->
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.version}</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
 
         <!-- ✅ TestNG — same as you use today -->

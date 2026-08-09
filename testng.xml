@@ -3,7 +3,7 @@
 <suite name="Playwright-Java-Demo" verbose="1">
     <test name="All Scenarios">
         <classes>
-            <class name="com.demo.runner.TestRunner"/>
+            <class name="TestCases.UpdateNaukriResume"/>
         </classes>
     </test>
 </suite>
