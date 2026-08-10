@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * *'   # Runs daily at 9 AM IST (03:30 UTC)
+
 
 jobs:
   test:

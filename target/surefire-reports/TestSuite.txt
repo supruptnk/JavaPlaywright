@@ -1,4 +1,98 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.56 s -- in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.22 s <<< FAILURE! -- in TestSuite
+TestCases.UpdateNaukriResume.updateResume -- Time elapsed: 6.413 s <<< FAILURE!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Error: strict mode violation: locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon") resolved to 2 elements:
+    1) <span class="edit icon">editOneTheme</span> aka locator("#lazyResumeHead").getByText("editOneTheme")
+    2) <span class="edit icon">editOneTheme</span> aka locator("#lazyKeySkills").getByText("editOneTheme")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon") resolved to 2 elements:
+    1) <span class="edit icon">editOneTheme</span> aka locator("#lazyResumeHead").getByText("editOneTheme")
+    2) <span class="edit icon">editOneTheme</span> aka locator("#lazyKeySkills").getByText("editOneTheme")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23452:16)
+    at async _Frame.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23544:27)
+    at async _FrameDispatcher.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:54436:16)
+    at async _ProgressController.run (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at Pages.Naukri.NaukriProfilePage.editResumeHeadline(NaukriProfilePage.java:23)
+	at TestCases.UpdateNaukriResume.updateResume(UpdateNaukriResume.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon") resolved to 2 elements:
+    1) <span class="edit icon">editOneTheme</span> aka locator("#lazyResumeHead").getByText("editOneTheme")
+    2) <span class="edit icon">editOneTheme</span> aka locator("#lazyKeySkills").getByText("editOneTheme")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon") resolved to 2 elements:
+    1) <span class="edit icon">editOneTheme</span> aka locator("#lazyResumeHead").getByText("editOneTheme")
+    2) <span class="edit icon">editOneTheme</span> aka locator("#lazyKeySkills").getByText("editOneTheme")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23452:16)
+    at async _Frame.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23544:27)
+    at async _FrameDispatcher.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:54436:16)
+    at async _ProgressController.run (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator("div.widgetHead").filter(new Locator.FilterOptions().setHasText("")).locator("span.edit.icon")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 37 more
+

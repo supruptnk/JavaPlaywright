@@ -9,10 +9,72 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Playwright-Java-Demo</th></tr>
-<tr><td><a href="#t0">All Scenarios</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,289</td><td></td><td></td></tr>
+<tr><td><a href="#t0">All Scenarios</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,443</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Playwright-Java-Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Scenarios &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.UpdateNaukriResume</td><td><a href="#m0">updateResume</a></td><td rowspan="1">1786300984633</td><td rowspan="1">13086</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Playwright-Java-Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Scenarios &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.UpdateNaukriResume</td><td><a href="#m0">updateResume</a></td><td rowspan="1">1786372845201</td><td rowspan="1">6400</td></tr></tbody>
 </table>
-<h2>All Scenarios</h2><h3 id="m0">TestCases.UpdateNaukriResume#updateResume</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>All Scenarios</h2><h3 id="m0">TestCases.UpdateNaukriResume#updateResume</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyResumeHead&quot;).getByText(&quot;editOneTheme&quot;)
+    2) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyKeySkills&quot;).getByText(&quot;editOneTheme&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyResumeHead&quot;).getByText(&quot;editOneTheme&quot;)
+    2) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyKeySkills&quot;).getByText(&quot;editOneTheme&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23452:16)
+    at async _Frame.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23544:27)
+    at async _FrameDispatcher.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:54436:16)
+    at async _ProgressController.run (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at Pages.Naukri.NaukriProfilePage.editResumeHeadline(NaukriProfilePage.java:23)
+	at TestCases.UpdateNaukriResume.updateResume(UpdateNaukriResume.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyResumeHead&quot;).getByText(&quot;editOneTheme&quot;)
+    2) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyKeySkills&quot;).getByText(&quot;editOneTheme&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;) resolved to 2 elements:
+    1) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyResumeHead&quot;).getByText(&quot;editOneTheme&quot;)
+    2) &lt;span class=&quot;edit icon&quot;&gt;editOneTheme&lt;/span&gt; aka locator(&quot;#lazyKeySkills&quot;).getByText(&quot;editOneTheme&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23452:16)
+    at async _Frame.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:23544:27)
+    at async _FrameDispatcher.click (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:54436:16)
+    at async _ProgressController.run (C:\Users\supra\AppData\Local\Temp\playwright-java-12624207717078226933\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator(&quot;div.widgetHead&quot;).filter(new Locator.FilterOptions().setHasText(&quot;&quot;)).locator(&quot;span.edit.icon&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 37 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

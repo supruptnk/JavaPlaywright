@@ -4,9 +4,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
+
 import DriverManager.BrowserManager;
+import Listeners.TestListener;
+
 import com.microsoft.playwright.Page;
 
+@Listeners(TestListener.class)
 public class BasePage {
     
     @BeforeSuite
@@ -28,7 +33,7 @@ public class BasePage {
         BrowserManager.initPage();
     }
 
-    public Page returnPage(){
+    public static Page returnPage(){
         return BrowserManager.getPage();
     }
 
