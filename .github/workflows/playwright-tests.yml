@@ -43,9 +43,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: failure-artifacts
-          path: |
-            test-output/screenshots/
-            test-output/traces/
+          path: screenshots/
           retention-days: 7
 
       - name: Upload Surefire report

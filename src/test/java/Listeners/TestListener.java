@@ -20,7 +20,9 @@ public class TestListener implements ITestListener{
             Page page = BasePage.returnPage();
             ScreenshotUtils.takeScreenshot(page, "test-output//screenshots//"+testName+".png");
 
-        }catch(IllegalStateException e){
+        }catch(Exception e){
+
+            e.printStackTrace();
 
         }
     }
