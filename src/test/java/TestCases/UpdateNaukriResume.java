@@ -12,6 +12,7 @@ public class UpdateNaukriResume extends BasePage {
     @Test
     public void updateResume(){
     String user = System.getenv("NAUKRI_USERNAME");
+    System.out.println(user);
     String pass = System.getenv("NAUKRI_PASSWORD");
     Page page = returnPage();
     // page.setDefaultTimeout(50000);
