@@ -37,6 +37,8 @@ jobs:
         run: mvn -B test -Denv=qa -Dheadless=true
         env:
           CI: true
+          NAUKRI_USERNAME: ${{ secrets.NAUKRI_USERNAME }}
+          NAUKRI_PASSWORD: ${{ secrets.NAUKRI_PASSWORD }}
 
       - name: Upload screenshots/traces on failure
         if: failure()
