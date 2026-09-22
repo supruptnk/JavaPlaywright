@@ -18,7 +18,7 @@ public class TestListener implements ITestListener{
         try{
             
             Page page = BasePage.returnPage();
-            ScreenshotUtils.takeScreenshot(page, testName+".png");
+            ScreenshotUtils.takeScreenshot(page, "test-output//screenshots//"+testName+".png");
 
         }catch(IllegalStateException e){
 
