@@ -2,7 +2,7 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
   schedule:
     - cron: '30 3 * * *'   # Runs daily at 9 AM IST (03:30 UTC)
